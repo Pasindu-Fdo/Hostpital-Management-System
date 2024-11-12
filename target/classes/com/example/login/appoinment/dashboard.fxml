@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.appoinment.dashboard">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="237.0" layoutY="48.0" prefHeight="50.0" prefWidth="151.0" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="errormsgid" layoutX="14.0" layoutY="243.0" prefHeight="18.0" prefWidth="289.0" textFill="RED" />
+            <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="249.0" layoutY="-25.0">
+               <image>
+                  <Image url="@MED.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cancel" layoutX="495.0" layoutY="342.0" mnemonicParsing="false" onAction="#cancleButtonAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #1ecbe1; -fx-background-radius: 10; -fx-cursor: hand;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="30.96" offsetY="3.0" radius="7.24" width="0.0">
+                     <color>
+                        <Color red="0.6315789222717285" green="0.6105263233184814" blue="0.6105263233184814" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Label fx:id="Verrormsgid" layoutX="15.0" layoutY="297.0" prefHeight="28.0" prefWidth="570.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="VPerrormsgid" layoutX="93.0" layoutY="99.0" prefHeight="27.0" prefWidth="407.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="updateA" layoutX="91.0" layoutY="147.0" mnemonicParsing="false" onAction="#Add" prefHeight="83.0" prefWidth="158.0" style="-fx-background-color: #1bcbe1; -fx-background-radius: 10; -fx-cursor: hand;" text="New Appointment">
+               <effect>
+                  <DropShadow height="30.96" offsetY="3.0" radius="7.24" width="0.0">
+                     <color>
+                        <Color red="0.6315789222717285" green="0.6105263233184814" blue="0.6105263233184814" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="viewA" layoutX="344.0" layoutY="147.0" mnemonicParsing="false" onAction="#view" prefHeight="83.0" prefWidth="158.0" style="-fx-background-color: #1bcbe1; -fx-background-radius: 10; -fx-cursor: hand;" text="View Appintment">
+               <effect>
+                  <DropShadow height="30.96" offsetY="3.0" radius="7.24" width="0.0">
+                     <color>
+                        <Color red="0.6315789222717285" green="0.6105263233184814" blue="0.6105263233184814" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label fx:id="Derrormsgid" layoutX="36.0" layoutY="290.0" prefHeight="18.0" prefWidth="538.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="logout" layoutX="36.0" layoutY="342.0" mnemonicParsing="false" onAction="#logoutfunction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #1ecbe1; -fx-background-radius: 10; -fx-cursor: hand;" text="Log out">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="30.96" offsetY="3.0" radius="7.24" width="0.0">
+                     <color>
+                        <Color red="0.6315789222717285" green="0.6105263233184814" blue="0.6105263233184814" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

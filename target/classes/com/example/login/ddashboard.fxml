@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="634.0" style="-fx-background-color: #feffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.Ddashboardcontroller">
+   <children>
+      <Pane layoutX="96.0" layoutY="104.0" prefHeight="236.0" prefWidth="458.0" style="-fx-background-color: #EDEDEE; -fx-background-radius: 30;" />
+      <ImageView fitHeight="109.0" fitWidth="111.0" layoutX="2.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="231.0" layoutY="24.0" prefHeight="62.0" prefWidth="177.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="logout" layoutX="554.0" layoutY="24.0" mnemonicParsing="false" onAction="#logoutfunction" style="-fx-background-color: #1ecbe1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Logout" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" offsetY="2.0" radius="0.0" spread="0.1" width="0.0" />
+         </effect>
+      </Button>
+      <Button fx:id="cancel" layoutX="556.0" layoutY="356.0" mnemonicParsing="false" onAction="#cancelaction" style="-fx-background-color: #1ecbe1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Cancel" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" offsetY="2.0" radius="0.0" spread="0.1" width="0.0" />
+         </effect>
+      </Button>
+      <AnchorPane layoutX="110.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="178.0" style="-fx-border-color: #AAAAAA; -fx-background-color: #1ecbe1; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="68.0" layoutX="59.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@prcreate.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="prcreate" layoutX="33.0" layoutY="117.0" mnemonicParsing="false" onAction="#loadcreate" prefHeight="35.0" prefWidth="111.0" style="-fx-cursor: hand; -fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: white;" text="New Prescription" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="23.33" offsetY="4.0" radius="11.3325" spread="0.1" width="24.0">
+                     <color>
+                        <Color red="0.23157894611358643" green="0.23157894611358643" blue="0.23157894611358643" opacity="0.3700000047683716" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="23.34" offsetY="2.0" radius="5.335" width="0.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="358.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="178.0" style="-fx-border-color: #AAAAAA; -fx-background-color: #1ecbe1; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="64.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@prview.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="predit" layoutX="23.0" layoutY="119.0" mnemonicParsing="false" onAction="#loadedit" prefHeight="35.0" prefWidth="132.0" style="-fx-cursor: hand; -fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: white;" text="View, Edit and Delete" textOverrun="CLIP">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="23.33" offsetY="4.0" radius="11.3325" spread="0.1" width="24.0">
+                     <color>
+                        <Color red="0.23157894611358643" green="0.23157894611358643" blue="0.23157894611358643" opacity="0.3700000047683716" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="23.34" offsetY="2.0" radius="5.335" width="0.0" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
