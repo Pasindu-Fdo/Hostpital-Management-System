@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="330.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.medicine.Phremove">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="1.0" prefHeight="430.0" prefWidth="647.0">
+         <children>
+            <AnchorPane layoutX="-10.0" layoutY="-18.0" prefHeight="124.0" prefWidth="657.0" style="-fx-background-color: #15d6ea;">
+               <children>
+                  <Label layoutX="210.0" layoutY="24.0" prefHeight="82.0" prefWidth="274.0" text="Remove Medicine">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="124.0" fitWidth="154.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="78.0" layoutY="139.0" text="Medicine Name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="98.0" layoutY="175.0" text="Medicine ID">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="medicine_name" layoutX="170.0" layoutY="135.0" prefHeight="26.0" prefWidth="320.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="3.0" offsetY="1.0" radius="1.5750000000000002" width="5.3">
+                     <color>
+                        <Color red="0.557894766330719" green="0.5558284521102905" blue="0.5558284521102905" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="medicine_id" layoutX="170.0" layoutY="170.0" prefHeight="26.0" prefWidth="320.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="3.0" offsetY="1.0" radius="1.5750000000000002" width="5.3">
+                     <color>
+                        <Color red="0.557894766330719" green="0.5558284521102905" blue="0.5558284521102905" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Button fx:id="button_remove" layoutX="485.0" layoutY="389.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #15d6ea; -fx-background-radius: 10; -fx-cursor: hand;" text="Remove">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="18.66" offsetY="2.0" radius="4.165" width="0.0">
+                     <color>
+                        <Color red="0.38947367668151855" green="0.38947367668151855" blue="0.38947367668151855" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="cancel" layoutX="575.0" layoutY="389.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #15d6ea; -fx-background-radius: 10; -fx-cursor: hand;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="18.66" offsetY="2.0" radius="4.165" width="0.0">
+                     <color>
+                        <Color red="0.38947367668151855" green="0.38947367668151855" blue="0.38947367668151855" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="findbyname" layoutX="503.0" layoutY="135.0" mnemonicParsing="false" onAction="#initialize" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: #15d6ea; -fx-background-radius: 10; -fx-cursor: hand;" text="Find">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="18.66" offsetY="2.0" radius="4.165" width="0.0">
+                     <color>
+                        <Color red="0.38947367668151855" green="0.38947367668151855" blue="0.38947367668151855" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="findbyid" layoutX="503.0" layoutY="171.0" mnemonicParsing="false" onAction="#initialize" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: #15d6ea; -fx-background-radius: 10; -fx-cursor: hand;" text="Find">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="18.66" offsetY="2.0" radius="4.165" width="0.0">
+                     <color>
+                        <Color red="0.38947367668151855" green="0.38947367668151855" blue="0.38947367668151855" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <VBox fx:id="matchdata" alignment="CENTER" layoutX="17.0" layoutY="224.0" prefHeight="124.0" prefWidth="615.0" />
+            <Label fx:id="messagelabel" alignment="CENTER" layoutX="43.0" layoutY="358.0" prefHeight="26.0" prefWidth="561.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.appoinment.viewAppoinmentcontroller">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="64.0" prefHeight="27.0" prefWidth="169.0" text="View Appointments">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="102.0" prefHeight="18.0" prefWidth="96.0" text="Patient Name " />
+            <TextField fx:id="Pname" layoutX="109.0" layoutY="99.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter Patient Name" />
+            <Button fx:id="VBPsearch" layoutX="317.0" layoutY="98.0" mnemonicParsing="false" onAction="#PsearchButtonAction" style="-fx-background-color: #1ecbe1; -fx-background-radius: 10; -fx-cursor: hand;" text="Search">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" offsetY="2.0" radius="0.0" width="0.0">
+                     <color>
+                        <Color red="0.5263158082962036" green="0.5107212662696838" blue="0.5107212662696838" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Label fx:id="Docname" layoutX="27.0" layoutY="135.0" prefHeight="18.0" prefWidth="134.0" text="Doctor Name ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="errormsgid" layoutX="14.0" layoutY="243.0" prefHeight="18.0" prefWidth="289.0" textFill="RED" />
+            <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="249.0" layoutY="-25.0">
+               <image>
+                  <Image url="@MED.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="VCadd" layoutX="15.0" layoutY="341.0" mnemonicParsing="false" onAction="#cancleButtonAction" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #1ecbe1; -fx-background-radius: 10; -fx-cursor: hand;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" offsetY="2.0" radius="0.0" width="0.0">
+                     <color>
+                        <Color red="0.5263158082962036" green="0.5107212662696838" blue="0.5107212662696838" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Label fx:id="Date" layoutX="174.0" layoutY="135.0" prefHeight="18.0" prefWidth="96.0" text="Date">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="Time" layoutX="338.0" layoutY="135.0" prefHeight="18.0" prefWidth="96.0" text="Time">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="Verrormsgid" layoutX="15.0" layoutY="307.0" prefHeight="18.0" prefWidth="570.0" textFill="RED" />
+            <Label fx:id="VPerrormsgid" layoutX="386.0" layoutY="102.0" prefHeight="18.0" prefWidth="198.0" textFill="RED" />
+            <VBox fx:id="Vbox" layoutX="13.0" layoutY="157.0" prefHeight="135.0" prefWidth="574.0" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
