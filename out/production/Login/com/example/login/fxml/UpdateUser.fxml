@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" style="-fx-background-color: #f4f4f4; -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.demo1.Controllers.UpdateUserController">
+
+    <HBox alignment="CENTER">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Update User" />
+    </HBox>
+
+    <VBox spacing="15" style="-fx-padding: 20;">
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Search User:" />
+            <TextField fx:id="searchUpdateField" prefWidth="200" promptText="Enter username" />
+            <Button fx:id="searchUpdateButton" style="-fx-background-color: #2196F3; -fx-text-fill: white;" text="Search" />
+        </HBox>
+
+        <GridPane hgap="10" style="-fx-padding: 20;" vgap="15">
+            <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="updateUsernameField" promptText="Enter username" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Mobile" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="updateMobileField" promptText="Enter Mobile number" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Address" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="updateAddressField" layoutX="120.0" layoutY="71.0" promptText="Enter Address" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="New Password:" GridPane.rowIndex="3" />
+            <PasswordField fx:id="updatePasswordField" promptText="Enter new password (optional)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Job title" GridPane.rowIndex="4" />
+            <ComboBox fx:id="updateRoleComboBox" prefWidth="200" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+
+
+
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button fx:id="updateButton" style="-fx-background-color: #FF9800; -fx-text-fill: white;                            -fx-min-width: 120; -fx-min-height: 35;" text="Update User" />
+            <Button fx:id="cancelUpdateButton" style="-fx-background-color: #f44336; -fx-text-fill: white;                            -fx-min-width: 100; -fx-min-height: 35;" text="Cancel" />
+        </HBox>
+    </VBox>
+    <Label fx:id="updateMessageLabel" alignment="CENTER" style="-fx-text-fill: red;" />
+</VBox>
